@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    background-color: #E8ECF3;
+    padding-top: 5%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #0C1226;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+ul {
+    width: 1155px;
+    height: 339px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+    li {
+        width: 207px;
+        height: 329px;
+        border-radius: 15px;
+        background-color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        transition: 150ms transform ease-out;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: rgba($color: #000000, $alpha: .3) 0px 5px 30px;
+        }
+
+        .color {
+            width: 100%;
+            height: 251px;
+            background-color: var(--color);
+            border-radius: 5px;
+        }
+
+        .hex {
+            width: 100%;
+            margin: auto;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: rgba($color: #0C1226, $alpha: .7);
+
+            &::selection {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+button {
+    border-radius: 5px;
+    background-color: #7E6CCA;
+    width: 393px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin: 80px auto 20px auto;
+    cursor: pointer;
+    transition: 100ms background-color ease-in-out;
+
+    &:hover {
+        background-color: lighten($color: #7e6cca, $amount: 5);
+    }
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0C1226;
+    text-align: center;
+}
+
+.instruction {
+    width: 500px;
+    height: 47px;
+    border-radius: 23.5px;
+    background-color: #fff;
+    margin: 94px auto 0 auto;
+    text-align: center;
+    line-height: 47px;
+}
+
+#notification {
+    position: fixed;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0C1226;
+    border-radius: 29px;
+    width: 380px;
+    height: 48px;
+    color: #E9E9EC;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    transition: 200ms top;
+
+    &.active {
+        top: 25px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
