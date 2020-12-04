@@ -1,9 +1,9 @@
 {
-  "name": "sweet-web-boilerplate",
+  "name": "color-palette-generator",
   "version": "1.0.0",
-  "description": "A clean and simple starting point (boilerplate) with HTML, CSS and JS and the tools you will need.",
+  "description": "",
   "main": "index.js",
-  "repository": "https://github.com/hakandemiral/sweet-web-boilerplate.git",
+  "repository": "https://github.com/hakandemiral/color-palette-generator.git",
   "author": "Hakan Demiral <hakan.98@outlook.com>",
   "license": "MIT",
   "devDependencies": {
