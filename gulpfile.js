@@ -103,3 +103,4 @@ gulp.task('watch', () => {
 
 //GULPPP
 gulp.task('default', gulp.series('delete', gulp.parallel('html', 'stylesheet', 'script', 'image', 'browser-sync', 'watch')))
+gulp.task('build', gulp.series('delete', gulp.parallel('html', 'stylesheet', 'script', 'image')))
